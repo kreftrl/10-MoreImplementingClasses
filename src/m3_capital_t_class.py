@@ -321,6 +321,10 @@ class CapitalT(object):
         # variables beyond  h_rect  and  v_rect, at any point of this exercise.
         #######################################################################
         newT=CapitalT(self.h_rect.get_center(),self.h_rect.get_width(),self.v_rect.get_height(),self.v_rect.get_width())
+        newT.h_rect.fill_color=self.h_rect.fill_color
+        newT.h_rect.outline_color=self.h_rect.outline_color
+        newT.v_rect.fill_color = self.h_rect.fill_color
+        newT.v_rect.outline_color = self.h_rect.outline_color
         return newT
 
 # -----------------------------------------------------------------------------
